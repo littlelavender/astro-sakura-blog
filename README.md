@@ -1,4 +1,4 @@
-# littlelavender.github.io
+# 说明
 一个以[Astro](https://docs.astro.build)构建的个人博客，使用[🌸Sakura](https://github.com/LIlGG/halo-theme-sakura)主题。
 
 ## 运行
