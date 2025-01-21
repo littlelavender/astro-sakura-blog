@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PostLayout.astro'
 title: "Hello World"
 description: "据说，第一篇文章是helloworld会带来好运哦！"
 heroImage: "/images/cover/cover_1.jpg"

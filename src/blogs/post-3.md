@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PostLayout.astro'
 title: "Post 3"
 description: "凑数三号"
 category: "待定"

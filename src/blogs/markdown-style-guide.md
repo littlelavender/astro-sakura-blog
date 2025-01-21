@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PostLayout.astro'
 title: "Markdown样式指南"
 description: "以下是在Astro中编写Markdown内容时可以使用的一些基本Markdown语法示例。"
 heroImage: "/images/cover/cover_2.jpg"
