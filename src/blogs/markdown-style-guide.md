@@ -1,7 +1,7 @@
 ---
 title: "Markdown样式指南"
 description: "以下是在Astro中编写Markdown内容时可以使用的一些基本Markdown语法示例。"
-heroImage: "/images/cover/cover_2.jpg"
+heroImage: "/images/cover/cover_style.webp"
 author: "Astro"
 avatar: "/theme-sakura/assets/images/default/avatar.webp"
 category: "默认分类"
@@ -36,7 +36,7 @@ updateDate: "2024-06-01"
 
 ## 图片
 
-![blog placeholder](/images/cover/cover_2.jpg)
+![blog placeholder](/images/cover/cover_style.webp)
 
 ## 块引用
 

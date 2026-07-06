@@ -99,7 +99,7 @@ document.addEventListener('astro:page-load', () => {
   });
 
   // 关闭搜索点击事件
-  document.querySelector('.search_close').addEventListener('click', () => {
+  document.querySelector('.search-close').addEventListener('click', () => {
     document.querySelector('.js-search').classList.remove('is-visible');
   });
 

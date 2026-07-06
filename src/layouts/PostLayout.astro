@@ -17,7 +17,7 @@ const hasImage = !!post.data.heroImage;
 
 const allPosts = await getCollection("blogs");
 const sortedPosts = sortPosts(allPosts);
-let curPost = null;
+let curPost;
 let prevPost = null;
 let nextPost = null;
 for (let i = 0; i < sortedPosts.length; i++) {
@@ -59,11 +59,9 @@ for (let i = 0; i < sortedPosts.length; i++) {
     <PostDirectory headings={headings} />
   </SiteContent>
 </BaseLayout>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css">
-<script>
-  import hljs from 'https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/+esm';
-  import QRCode from 'https://cdn.jsdelivr.net/npm/qrcode@1.5.3/+esm';
-
+<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+<script is:inline src="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/highlight.min.js"></script>
+<script is:inline>
   document.addEventListener('astro:page-load', async () => {
     console.log('highlightjs run');
     document.querySelectorAll("pre").forEach(preElement => {
@@ -82,7 +80,11 @@ for (let i = 0; i < sortedPosts.length; i++) {
         }
       }
     });
-
+  });
+</script>
+<script is:inline src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+<script is:inline>
+  document.addEventListener('astro:page-load', async () => {
     const shareWechatElement = document.getElementById("qrcode");
     if (shareWechatElement) {
       QRCode.toCanvas(shareWechatElement, shareWechatElement.getAttribute("data-url"), {
@@ -95,5 +97,3 @@ for (let i = 0; i < sortedPosts.length; i++) {
     }
   });
 </script>
-
-
